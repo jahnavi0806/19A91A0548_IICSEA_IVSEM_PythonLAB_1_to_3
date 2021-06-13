@@ -1,11 +1,16 @@
-#TASK  :: Ms. Gabriel Williams is a botany professor at District College. One day,
-#she asked her student Mickey to compute the average of all the plants with 
-#distinct heights in her greenhouse.
-#SAMPLE INPUT
-#STDIN                                       Function
-#-----                                       --------
-#10                                          arr[] size N = 10
-#161 182 161 154 176 170 167 171 170 174     arr = [161, 181, ..., 174]
+'''
+TASK  :: Ms. Gabriel Williams is a botany professor at District College. One day,
+she asked her student Mickey to compute the average of all the plants with 
+distinct heights in her greenhouse.
+SAMPLE INPUT
+STDIN                                       Function
+-----                                       --------
+10                                          arr[] size N = 10
+161 182 161 154 176 170 167 171 170 174     arr = [161, 181, ..., 174]
+SAMPLE OUTPUT
+169.375
+'''
+
 from __future__ import division
 
 def average(array):
