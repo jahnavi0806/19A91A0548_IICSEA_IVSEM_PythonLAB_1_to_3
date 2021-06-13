@@ -1,0 +1,33 @@
+'''
+There is an array of n integers. There are also 2 disjoint sets,  
+and , each containing  integers. You like all the integers in set A
+and dislike all the integers in set B. Your initial happiness is 0 . 
+For each i integer in the array, if i belongs to A you add 1 to your happiness. 
+If i belongs to B,you add -1 to your happiness. 
+Otherwise, your happiness does not change. 
+Output your final happiness at the end.
+'''
+if __name__ == '__main__':
+    n, m = map(int, input().split())
+    N = list(map(int, input().split()))
+    A = set(map(int, input().split()))
+    B = set(map(int, input().split()))
+
+    happiness = 0
+
+    for e in N:
+        if e in A:
+            happiness += 1
+        if e in B:
+            happiness -= 1
+
+    print(happiness)
+'''    
+#Input and Output
+3 2
+1 5 3
+3 1
+5 7
+
+1
+'''
