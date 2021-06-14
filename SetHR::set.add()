@@ -7,13 +7,12 @@ The first line contains an integer N, the total number of country stamps.
 The next N  lines contains the name of the country where the stamp is from.
 Find the total number of distinct country stamps.
 '''
-if __name__ == '__main__':
-    C = set()
-    for _ in range(int(input())):
-        C.add(input().strip())
 
-    print(len(C))
-    
+    n = int(input())
+countrynames = set()
+for i in range(n):
+    countrynames.add(input())
+print(len(countrynames))
 '''
 Input and Output    
 7
