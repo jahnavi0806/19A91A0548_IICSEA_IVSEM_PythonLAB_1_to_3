@@ -4,14 +4,18 @@ you have to execute N  commands given in N lines.
 
 The commands will be pop, remove and discard.
 '''
-if __name__ == '__main__':
-    n = int(input())
-    s = set(map(int, input().split()))
-    for _ in range(int(input())):
-        method, *args = input().split()
-        getattr(s, method)(*map(int, args))
-
-    print(sum(s))
+n = int(input())
+s = set(map(int,input().split()))
+number = int(input())
+for i in range(number):
+    id = input().split()
+    if id[0]=="remove":
+        s.remove(int(id[1]))
+    elif ip[0]=="discard":
+        s.discard(int(id[1]))
+    else :
+        s.pop()
+print(sum(list(s)))
 '''
 Input and Output::
 
