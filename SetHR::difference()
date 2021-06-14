@@ -7,11 +7,13 @@ the English newspaper, and one set has subscribed to the French newspaper.
 Your task is to find the total number of students who have subscribed 
 to only English newspapers.
 '''
-if __name__ == '__main__':
-    _, E = input(), set(input().split())
-    _, F = input(), set(input().split())
-    print(len(E.difference(F)))
-    
+E = int(input())
+English = list(input().split())
+F = int(input())
+French = list(input().split())
+print(len(set(English).difference(set(French))))
+
+
 '''
 Input and Output
 
