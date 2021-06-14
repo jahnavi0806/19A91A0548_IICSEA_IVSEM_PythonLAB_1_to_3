@@ -3,13 +3,11 @@ Given  sets of integers,and , print their symmetric difference
 in ascending order. The term symmetric difference indicates those
 values that exist in either  or  but do not exist in both.
 '''
-if __name__ == '__main__':
-    m = int(input())
-    M = set(input().split())
-    n = int(input())
-    N= set(input().split())
-
-    print("\n".join(sorted(M^N, key=int)))
+E = int(input())
+English = list(input().split())
+F = int(input())
+French = list(input().split())
+print(len(set(English).symmetric_difference(set(French)))
 '''    
  #Input and Output
  
