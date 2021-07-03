@@ -1,0 +1,31 @@
+def prime(i):
+    # Program to check if a number is prime or not
+ flag = False
+# prime numbers are greater than 1
+ if i > 1:
+    # check for factors
+    for k in range(2, i):
+        if (i % k) == 0:
+           flag = True
+           break
+ if flag:
+    return False
+ else:
+    return True
+    
+sum=0
+for i in range(2,2000001):
+    if(prime(i)):
+      sum=sum+i;
+print(sum)
+
+#second method
+sum=0
+for i in range(2,2000001):
+         for k in range(2, 9):
+            if ((i % k) == 0):
+              sum=sum+i
+print(sum)
+
+3435718714284
+    
