@@ -1,0 +1,50 @@
+'''
+Write a function ball_collide that takes two balls as parameters and computes if they
+are colliding. Your function should return a Boolean representing whether or not the
+balls are colliding. Hint: Represent a ball on a plane as a tuple of (x, y, r), r being the
+radius If (distance between two balls centers) <= (sum of their radii) then (they are
+colliding).
+'''
+def distance(x,y,a,b):
+     d=((((a - x)**2) + ((b-y)**2) )**0.5)
+     return d
+def ball_collide(x,y,a,b,r1,r2):
+    d=distance(x,y,a,b)
+    sum=r1+r2
+    if d<=sum:
+        return True
+    else:
+        return False
+x=int(input("Enter x coordinate of First ball Center"))
+y=int(input("Enter y coordinate of First ball Center"))
+a=int(input("Enter x coordinate of Second ball Center"))
+b=int(input("Enter y coordinate of Second ball Center"))
+r1=int(input("Enter First ball radius"))
+r2=int(input("Enter Second ball radius"))
+if ball_collide(x,y,a,b,r1,r2):
+     print("Balls are colliding")
+else:
+    print("Balls are not colliding")
+
+
+#Output::
+
+#In case of balls that are colliding
+
+Enter x coordinate of First ball Center5
+Enter y coordinate of First ball Center5
+Enter x coordinate of Second ball Center6
+Enter y coordinate of Second ball Center6
+Enter First ball radius3
+Enter Second ball radius5
+Balls are colliding
+
+#In case of balls that are not colliding
+
+Enter x coordinate of First ball Center5
+Enter y coordinate of First ball Center5
+Enter x coordinate of Second ball Center10
+Enter y coordinate of Second ball Center10
+Enter First ball radius4
+Enter Second ball radius2
+Balls are not colliding
